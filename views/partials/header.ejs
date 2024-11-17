@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="logo-container">
+        <!-- Add a comment to make sure this is the code being used -->
+        <img src="/images/Logoo.png" alt="ThePlayground Logo" class="logo" />
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="/" class="<%= typeof activeRoute !== 'undefined' && activeRoute === '/' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/blogs" class="<%= typeof activeRoute !== 'undefined' && activeRoute === '/blogs' ? 'active' : '' %>">Blog</a></li>
+            <li><a href="/portfolio" class="<%= typeof activeRoute !== 'undefined' && activeRoute === '/portfolio' ? 'active' : '' %>">Portfolio</a></li>
+            <li><a href="/contact" class="<%= typeof activeRoute !== 'undefined' && activeRoute === '/contact' ? 'active' : '' %>">Contact</a></li>
+        </ul>
+    </nav>
+</header>

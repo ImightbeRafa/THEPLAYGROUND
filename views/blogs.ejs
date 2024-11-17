@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Blogs</h1>
+    <div class="blogs-container">
+        <% if (blogs && blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <article class="blog-post">
+                    <h2><%= blog.title %></h2>
+                    <p><%= blog.content %></p>
+                    <p>Author: <%= blog.author %></p>
+                    <p>Created: <%= blog.createdAt.toLocaleDateString() %></p>
+                </article>
+            <% }) %>
+        <% } else { %>
+            <p>No blogs found</p>
+        <% } %>
+    </div>
+</body>
+</html>
